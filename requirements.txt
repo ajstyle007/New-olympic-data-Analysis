@@ -1,9 +1,9 @@
-numpy 
-pandas
-matplotlib
-seaborn
-plotly
-streamlit
-gunicorn
+numpy==1.26.3
+pandas==2.1.4
+matplotlib==3.8.2
+seaborn==0.13.1
+plotly==5.18.0
+streamlit==1.29.0
+gunicorn==19.7.1
 streamlit run /opt/render/project/src/.venv/bin/gunicorn
 pip install --upgrade pip
