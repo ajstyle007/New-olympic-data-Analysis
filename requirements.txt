@@ -5,3 +5,4 @@ seaborn
 plotly
 streamlit
 gunicorn
+streamlit run /opt/render/project/src/.venv/bin/gunicorn
