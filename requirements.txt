@@ -5,4 +5,4 @@ seaborn==0.13.1
 plotly==5.18.0
 streamlit==1.29.0
 gunicorn==19.7.1
-inspect==3.12.1
+
