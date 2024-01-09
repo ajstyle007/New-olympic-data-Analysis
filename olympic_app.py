@@ -8,9 +8,10 @@ import seaborn as sns
 import plotly.figure_factory as ff
 import inspect
 
-if not hasattr(inspect, 'getargspec'):
-    inspect.getargspec = inspect.getfullargspec
+#if not hasattr(inspect, 'getargspec'):
+#    inspect.getargspec = inspect.getfullargspec
 
+args = inspect.getfullargspec(functions)
 
 df = pd.read_csv("athlete_events.csv")
 region_df = pd.read_csv("noc_regions.csv")
