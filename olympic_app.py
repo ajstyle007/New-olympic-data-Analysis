@@ -18,9 +18,11 @@ df = functions.preprocess1(df, region_df)
 
 st.sidebar.title("Olympic Data Analysis.")
 st.sidebar.image("Olympic_image.jpg")
-user_menu = st.sidebar.radio("Select an option", ("Overall Analysis", "Medal tally", "Country-wise Analysis", "Athlete-wise Analysis"))
+user_menu = st.sidebar.radio("Select an option", ("Overview", "Overall Analysis", "Medal tally", "Country-wise Analysis", "Athlete-wise Analysis"))
 
-
+if user_menu == "Overview":
+    st.image("Analysis_image.png")
+    
 if user_menu == "Overall Analysis":
     editions = df["Year"].unique().shape[0]-1
     cities = df["City"].unique().shape[0]
